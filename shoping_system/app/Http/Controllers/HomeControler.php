@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeControler extends Controller
 {
-    public function product(){
-        return view(include.products)
-    }
+   public function home(){
+    return view('include.products');
+   }
 }

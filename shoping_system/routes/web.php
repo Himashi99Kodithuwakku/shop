@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\http\Controllers\HomeControler;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
-Route::get('/', function () {
-    return view('layout');
-});
-
-Route::get('/', function () {
-    return view('include.products');
-});
+Route::get('/', [HomeControler::class,'home']);
